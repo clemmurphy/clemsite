@@ -1,5 +1,17 @@
-import { explorerFont, orbiterFont } from './layout'
 import Blob from 'components/atoms/blob'
+import localFont from 'next/font/local'
+
+export const orbiterFont = localFont({
+  src: './TASAOrbiterVF.woff2',
+  display: 'swap',
+  variable: '--font-orbiter',
+})
+
+export const explorerFont = localFont({
+  src: './TASAExplorerVF.woff2',
+  display: 'swap',
+  variable: '--font-explorer',
+})
 
 export default function Home() {
   return (
