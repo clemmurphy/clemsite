@@ -1,5 +1,5 @@
 import Blob from 'components/atoms/blob'
-import { orbiterFont, explorerFont } from './fonts'
+import { orbiterFont, explorerFont } from 'src/utils/fonts/fonts'
 
 export default function Home() {
   return (
