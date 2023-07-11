@@ -6,6 +6,8 @@
   --color-green: #71b598;
   --color-yellow: #f3c561;
   --color-pink: #ed82a1;
+
+  --color-neutral: #e9e2da;
 }
 
 * {
@@ -17,7 +19,7 @@
 html,
 body {
   background-color: black;
-  color: #e9e2da;
+  color: var(--color-neutral);
 }
 
 main {
@@ -27,19 +29,26 @@ main {
 }
 
 a {
-  color: inherit;
+  color: white;
+  font-weight: 600;
   text-decoration: none;
 }
 
 h1 {
   font-size: 4rem;
   font-weight: 700;
+  line-height: 3.4rem;
   font-family: var(--font-orbiter);
 }
 
-p {
+h3 {
   font-size: 1.6rem;
+  font-weight: 500;
+  font-family: var(--font-explorer);
+}
+
+p {
+  font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
   font-family: var(--font-explorer);
 }
