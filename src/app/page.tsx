@@ -1,6 +1,7 @@
 import Blob from 'components/atoms/blob'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from 'src/components/molecules/footer'
 import { orbiterFont, explorerFont } from 'src/utils/fonts/fonts'
 
 export default function Home() {
@@ -51,6 +52,7 @@ export default function Home() {
           etc.
         </p>
       </div>
+      <Footer />
     </main>
   )
 }

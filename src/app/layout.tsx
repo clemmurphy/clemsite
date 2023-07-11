@@ -2,7 +2,6 @@ import StyledComponentsRegistry from 'src/utils/registry'
 import './globals.css'
 
 import { Metadata } from 'next'
-import Footer from 'src/components/molecules/footer'
 
 export const metadata: Metadata = {
   title: 'Clement Murphy',
@@ -28,7 +27,6 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </body>
-      <Footer />
     </html>
   )
 }

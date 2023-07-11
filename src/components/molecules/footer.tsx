@@ -7,8 +7,7 @@ export default function Footer() {
     <footer
       style={{
         position: 'absolute',
-        bottom: '0',
-        padding: '2rem',
+        bottom: '2rem',
         display: 'flex',
         alignItems: 'center',
         gap: '8px',
