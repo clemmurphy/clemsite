@@ -65,8 +65,29 @@ export default async function Page() {
   const morePosts = allPosts.slice(1)
 
   return (
-    <div className='container mx-auto px-5'>
-      <Intro />
+    <div className='container p-8'>
+      <h1 className='text-3xl font-semibold'>I'm Clement Murphy</h1>
+      <h3>I make software.</h3>
+      <br />
+      <p>
+        Currently working for{' '}
+        <a href='https://premierleague.com' className='font-style: underline'>
+          The Premier League
+        </a>
+      </p>
+      <br />
+      <p>Previously of:</p>
+      <p>InYourArea (Reach plc)</p>
+      <p>FNATIC</p>
+      <p>FACEIT</p>
+      <p>and many others</p>
+      <br />
+      <p>
+        <a href='mailto:clemmurphy@gmail.com' className='font-style: underline'>
+          Talk to me here
+        </a>
+      </p>
+      {/* <Intro />
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -77,7 +98,7 @@ export default async function Page() {
           excerpt={heroPost.excerpt}
         />
       )}
-      <MoreStories morePosts={morePosts} />
+      <MoreStories morePosts={morePosts} /> */}
     </div>
   )
 }

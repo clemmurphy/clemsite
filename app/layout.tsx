@@ -50,8 +50,8 @@ export default function RootLayout({
       <body className='bg-slate-200'>
         <section className='min-h-screen'>
           <main>{children}</main>
-          <Footer />
         </section>
+        {/* <Footer /> */}
       </body>
     </html>
   )
