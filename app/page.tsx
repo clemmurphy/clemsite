@@ -59,27 +59,62 @@ function HeroPost({
 }
 
 export default async function Page() {
-  const { isEnabled } = draftMode()
-  const allPosts = await getAllPosts(isEnabled)
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  // const { isEnabled } = draftMode()
+  // const allPosts = await getAllPosts(isEnabled)
+  // const heroPost = allPosts[0]
+  // const morePosts = allPosts.slice(1)
 
   return (
-    <div className='container p-8'>
+    <div className='container p-8 object-center'>
       <h1 className='text-3xl font-semibold'>I'm Clement Murphy</h1>
       <h3>I make software.</h3>
       <br />
       <p>
         Currently working for{' '}
+        <img
+          className='inline'
+          src='https://www.premierleague.com/resources/rebrand/v7.142.1/i/favicon/favicon-16x16.png'
+        />
+        &nbsp;
         <a href='https://premierleague.com' className='font-style: underline'>
           The Premier League
         </a>
       </p>
       <br />
       <p>Previously of:</p>
-      <p>InYourArea (Reach plc)</p>
-      <p>FNATIC</p>
-      <p>FACEIT</p>
+      <p>
+        <img
+          className='inline'
+          src='https://www.inyourarea.co.uk/assets/favicon/favicon-16x16.png'
+        />
+        &nbsp;
+        <a href='https://inyourarea.co.uk' className='font-style: underline'>
+          InYourArea
+        </a>{' '}
+        (Reach plc)
+      </p>
+      <p>
+        <img
+          className='inline'
+          src='https://www.fnatic.com/favicons/favicon-16x16.png'
+        />
+        &nbsp;
+        <a href='https://fnatic.com' className='font-style: underline'>
+          FNATIC
+        </a>
+      </p>
+      <p>
+        <img
+          className='inline'
+          height={16}
+          width={16}
+          src='https://www.faceit.com/favicon.ico'
+        />
+        &nbsp;
+        <a href='https://faceit.com' className='font-style: underline'>
+          FACEIT
+        </a>
+      </p>
       <p>and many others</p>
       <br />
       <p>
