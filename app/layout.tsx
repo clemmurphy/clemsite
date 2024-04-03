@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={inter.variable}>
       <body className='bg-slate-200'>
-        <section className='min-h-screen'>
+        <section className='min-h-100'>
           <main>{children}</main>
         </section>
         {/* <Footer /> */}
